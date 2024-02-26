@@ -1,9 +1,12 @@
 body{
-    background-color: #7C1D31;
+    background:  #7C1D31; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #942a41,  #7C1D31);
+    background: linear-gradient(to right,  #942a41,  #7C1D31);
     height: 300vh;
     width: 100%;
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 nav{
 
@@ -13,10 +16,9 @@ nav{
     align-items: center;
     position: sticky;
     height: 3%;
-    background-color: #7C1D31;
+    background:  #7C1D31;
     filter: drop-shadow(0px 2px 6px #8b233a);
     top: 0;
-    color: white;
     width: 100%;
     /* border-bottom: 2px solid white; */
 }
@@ -47,11 +49,20 @@ nav > ul > li > a {
 }
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    gap: 5%;
     aspect-ratio: 1;
-    justify-content: center;
-    align-items: flex-start;
+    /* border: black solid 2px; */
+    justify-content: flex-start;
+    align-items: center;
     /* margin-top: 20%; */
-    padding-top: 10%;
+    padding-top: 7%;
+}
+#about{
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
 }
