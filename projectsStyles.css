@@ -1,0 +1,35 @@
+.projectsContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    border: 2px solid black;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.project {
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1 / 1;
+    background: white;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    display: flex;
+}
+.projectWindow {
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: green;
+    width: 90%;
+    height: 60%;
+}
